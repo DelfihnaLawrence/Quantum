@@ -7,6 +7,8 @@ import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 
+import { NFTs } from "../../../server/data";
+import NftCard from "./NftCard";
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
@@ -74,6 +76,7 @@ const Welcome = () => {
             </div>
           </div>
         </div>
+        
 
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
@@ -117,6 +120,7 @@ const Welcome = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
